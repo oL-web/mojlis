@@ -1,24 +1,3 @@
-@media (min-width: 991px) {
-    .carousel-inner {
-        height: 700px;
-    }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    .carousel-inner {
-        height: 500px;
-    }
-}
-@media (max-width: 768px) {
-    .features div {
-        margin-bottom: 50px;
-    }
-    .features div:last-child {
-        margin-bottom: 0;
-    }
-    .carousel-inner {
-        height: 375px;
-    }
-}
 body {
     background: #fceed9;
     padding-top: 80px;
@@ -58,8 +37,7 @@ a,
     font-weight: bold;
 }
 .main-photo {
-    background: url("../img/fenek4.jpg") center center fixed no-repeat;
-    background-attachment: fixed;
+    background: url("../img/fenek4.jpg");
     -moz-background-size: cover;
       -o-background-size: cover;
          background-size: cover;
@@ -91,6 +69,47 @@ a,
     padding: 60px;
 }
 .footer {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-size: 1.5rem;
+}
+.img-gallery{
+    text-align:center;
+    margin-top:30px;
+}
+.img-responsive{
+    height:250px;
+    margin-bottom:30px;
+    display:inline-block;
+}
+.embed-responsive{
+    min-height:250px;
+    margin-bottom:30px;
+}
+.embed-responsive iframe{
+    padding:0 15px;
+}
+
+@media (min-width: 991px) {
+    .carousel-inner {
+        height: 700px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner {
+        height: 500px;
+    }
+}
+@media (max-width: 768px) {
+    .features div {
+        margin-bottom: 50px;
+    }
+    .features div:last-child {
+        margin-bottom: 0;
+    }
+    .carousel-inner {
+        height: 375px;
+    }
+    .img-responsive{
+    height:auto;
+}
 }
