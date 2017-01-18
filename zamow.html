@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Bootstrap</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,500italic&amp;subset=latin,latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+
+                <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#"><span class="bold">mój</span>lis</a>
+
+            </div>
+            <div class="collapse navbar-collapse navbar-right mainmenu" id="mainmenu">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                    <li><a href="galeria.html">GALERIA</a></li>
+                    <li><a href="lisy.html">LISY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="#" class="btn btn-default">ZAMÓW</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container form-container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <form>
+                    <label for="name">Imię</label>
+                    <input class="form-control" id="name" placeholder="Imię" type="text">
+
+                    <label for="surname">Nazwisko</label>
+                    <input class="form-control" id="surname" placeholder="Nazwisko" type="text">
+
+                    <label for="phonenumber">Numer telefonu</label>
+                    <input class="form-control" id="phonenumber" placeholder="Numer telefonu" type="tel">
+
+                    <label for="email">Adres e-mail</label>
+                    <input class="form-control" id="email" placeholder="Adres e-mail" type="email">
+
+                    <label for="message">Wiadomość</label>
+                    <textarea class="form-control" id="message" placeholder="Wpisz wiadomość o rodzaju danego lisa, dane odbioru oraz ogólne informacje"></textarea>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Wyrażam zgodę na wysłanie oferty handlowej
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Wyślij wiadomość</button>
+                </form>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row footer">
+            <div class="col-xs-12 text-center">Made with Bootstrap 2016</div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

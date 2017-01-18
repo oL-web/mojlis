@@ -6,8 +6,8 @@ body {
 a,
 .btn {
     -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
     -moz-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 .carousel-inner > .item > a > img,
@@ -39,8 +39,8 @@ a,
 .main-photo {
     background: url("../img/fenek4.jpg");
     -moz-background-size: cover;
-      -o-background-size: cover;
-         background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 600px;
 }
 .caption {
@@ -66,29 +66,142 @@ a,
 }
 .call-to-action {
     text-align: center;
-    padding: 60px;
+    margin-top: 60px;
+}
+.call-to-action .col-xs-12 * {
+    margin-bottom: 20px;
+}
+.call-to-action .col-xs-12 *:last-child {
+    margin-bottom: 0;
 }
 .footer {
     margin-bottom: 30px;
+    font-size: 1.3rem;
+}
+.img-gallery {
+    text-align: center;
+    margin-top: 30px;
+}
+.img-gallery .col-md-4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.img-responsive {
+    height: 250px;
+    display: inline-block;
+}
+.embed-responsive {
+    min-height: 250px;
+}
+.embed-responsive iframe {
+    padding: 0 15px;
+}
+.table-container,
+.footer,
+.form-container {
+    margin-top: 30px;
+}
+.table-responsive {
+    border: none;
+    font-size: 1.6rem;
+}
+.blog {
+    margin-top: 40px;
+}
+.blog-post {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.36);
+}
+.blog-post-meta {
+    border-bottom: 2px solid #3d3d3d;
+    padding-bottom: 10px;
+}
+.blog-post .thumbnail {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+.banner {
+    margin-bottom: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.sidebar-img img {
+    height: auto;
+}
+.labels .label {
+    font-weight: normal;
+    display: block;
+    float: left;
+    margin: 7px 2px 3px;
+}
+.labels .label-danger {
+    font-size: 1.4em;
+}
+.labels .label-info {
+    font-size: 1.1em;
+}
+.btn-toolbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+.blog-post h3 {
+    margin: 20px 0;
+}
+.author-info {
+    margin-top: 30px;
+    text-align: center;
+}
+.author-info .author-photo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: -80px auto 0 auto;
+}
+.author-info .panel-body {
+    padding: 0 0 20px 0;
+}
+.author-info .img-responsive {
+    height: 320px;
+}
+.read-more .thumbnail {
+    padding: 10px;
+}
+.comment-avatar {
+    max-width: 80px;
+    display: block;
+    min-height: 80px;
+}
+#comments .media-list {
+    margin: 20px 0;
+}
+#comments .media-list:first-child,
+h2 {
+    margin: 0;
+}
+.form-container {
     font-size: 1.5rem;
 }
-.img-gallery{
-    text-align:center;
-    margin-top:30px;
+.form-container input,
+textarea,
+.checkbox {
+    margin-bottom: 20px;
 }
-.img-responsive{
-    height:250px;
-    margin-bottom:30px;
-    display:inline-block;
-}
-.embed-responsive{
-    min-height:250px;
-    margin-bottom:30px;
-}
-.embed-responsive iframe{
-    padding:0 15px;
-}
-
 @media (min-width: 991px) {
     .carousel-inner {
         height: 700px;
@@ -109,7 +222,43 @@ a,
     .carousel-inner {
         height: 375px;
     }
-    .img-responsive{
-    height:auto;
+    .img-responsive {
+        height: auto;
+    }
+    .sidebar {
+        margin-top: 30px;
+    }
+    .sidebar-img {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -moz-box;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
+    }
+    .sidebar-img img {
+        padding: 5px;
+    }
 }
+@media (max-width: 500px) {
+    .blog-post .thumbnail {
+        float: none;
+        clear: both;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sidebar-img {
+        -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    }
+    .read-more .col-xs-offset-3 {
+        margin: 0;
+        width: 100%;
+    }
 }
